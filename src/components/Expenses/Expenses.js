@@ -30,6 +30,7 @@ const Expenses = (props) => {
         {/* <p>Data for years {filterInfoText} is hidden.</p> */}
         {props.items.map((expense) => (
           <ExpenseItem
+            key = {expense.id}  // it's importand to add key allways
             title={expense.title}
             amount={expense.amount}
             date={expense.date}
